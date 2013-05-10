@@ -56,18 +56,20 @@ class Item(object):
             items.append(subtitle)
 
         if isinstance(self.icon, str):
-            icon = Icon(iconpath=self.icon)
-            items.append(icon.element())
+            icon = Icon(iconpath=self.icon).element()
 
         elif isinstance(self.icon, Icon):
-            items.append(self.icon.element())
+            icon = self.icon.element()
+
+        if icon:
+            items.append(icon)
 
         return E.item(*items, **attrs)
 
 
-def render_items(items):
+def render(items):
     root = E.items(
-        *(item.element() for item in items)
+        *[item.element() for item in items]
     )
 
     return et.tostring(root, pretty_print=True, xml_declaration=True)
