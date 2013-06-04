@@ -13,8 +13,11 @@ class Icon(object):
         if self.iconpath:
             return E.icon(self.iconpath)
 
+        if self.filepath:
+            return E.icon(self.filepath, type='fileicon')
+
         if self.filetype:
-            return E.icon()
+            return E.icon(self.filetype, type='filetype')
 
 
 class Item(object):
@@ -57,11 +60,12 @@ class Item(object):
 
         if isinstance(self.icon, str):
             icon = Icon(iconpath=self.icon).element()
-
         elif isinstance(self.icon, Icon):
             icon = self.icon.element()
+        else:
+            icon = None
 
-        if icon:
+        if icon is not None:
             items.append(icon)
 
         return E.item(*items, **attrs)
