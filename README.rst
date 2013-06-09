@@ -7,14 +7,14 @@ python-alfred
 :Version: 0.2
 
 
-[AlfredApp](http://www.alfredapp.com) is an application launcher and
+`AlfredApp <http://www.alfredapp.com>`_ is an application launcher and
 general productivity tool for Mac OS X. It can be extended and
 customized with custom workflows and plugin scripts.
 
 Plugin scripts, called
-"[script filters](http://www.alfredforum.com/topic/5-generating-feedback-in-workflows/)"
+"`script filters <http://www.alfredforum.com/topic/5-generating-feedback-in-workflows/>`_"
 by AlfredApp, operate by printing an XML document to standard
-output. `python-alfred` is a Python library for easily building these
+output. ``python-alfred`` is a Python library for easily building these
 XML documents.
 
 Installation
@@ -69,7 +69,7 @@ binary and hexadecimal.::
 Requirements
 ============
 
-`python-alfred` requires `lxml`.
+``python-alfred`` requires ``lxml``.
 
 
 Changes
@@ -78,7 +78,7 @@ Changes
 0.2 - June 8, 2013
 -----------------------
 
-* Added support for new `<arg></arg>` elements
+* Added support for new ```<arg></arg>`` elements
 
 0.1 - June 4, 2013
 -----------------------
