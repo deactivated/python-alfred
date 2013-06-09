@@ -2,11 +2,11 @@ from setuptools import setup, find_packages
 
 
 setup(name='alfred',
-      version="0.1",
+      version="0.2",
       author="Mike Spindel",
       author_email="mike@spindel.is",
       license="MIT",
-      keywords="alfred script filter",
+      keywords="alfred alfredapp script filter",
       url="http://github.com/deactivated/pyalfred",
       description='Utilities for Alfred script filters.',
       install_requires=['lxml'],
