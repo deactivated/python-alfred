@@ -89,7 +89,7 @@ class Item(object):
         if icon is not None:
             items.append(icon)
 
-        attrs = {k: v for k, v in attrs.iteritems() if v is not None}
+        attrs = {k: v for k, v in attrs.items() if v is not None}
         return E.item(*items, **attrs)
 
 
@@ -99,4 +99,5 @@ def render(items):
     """
     root = E.items(*[item.element() for item in items])
 
-    return et.tostring(root, pretty_print=True, xml_declaration=True)
+    xml_bytes = et.tostring(root, pretty_print=True, xml_declaration=True)
+    return xml_bytes.decode('utf8')
