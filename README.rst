@@ -4,7 +4,7 @@ python-alfred
 
 :Authors:
         Mike Spindel
-:Version: 0.2
+:Version: 0.3
 
 
 `AlfredApp <http://www.alfredapp.com>`_ is an application launcher and
@@ -75,12 +75,18 @@ Requirements
 Changes
 =======
 
-0.2 - June 8, 2013
------------------------
+0.3 - Feb. 8, 2014
+------------------
 
-* Added support for new ```<arg></arg>`` elements
+* Expose [NSWorkspace launchApplication:] via ctypes
+* Add Python 3 support
+
+0.2 - June 8, 2013
+------------------
+
+* Added support for new ``<arg></arg>`` elements
 
 0.1 - June 4, 2013
------------------------
+------------------
 
 * Initial release

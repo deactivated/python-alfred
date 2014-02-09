@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 
 setup(name='alfred',
-      version="0.2",
+      version="0.3",
       author="Mike Spindel",
       author_email="mike@spindel.is",
       license="MIT",
